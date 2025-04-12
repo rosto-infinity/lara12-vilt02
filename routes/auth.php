@@ -59,7 +59,7 @@ Route::middleware('auth')->group(function () {
         ->middleware('throttle:6,1')
         ->name('verification.send');
 
-    // Affiche le formulaire de confirmation du mot de passe
+    // 33-Affiche le formulaire de confirmation du mot de passe
     Route::get('confirm-password', [ConfirmablePasswordController::class, 'show'])
         ->name('password.confirm');
 
