@@ -49,7 +49,7 @@ Route::middleware('auth')->group(function () {
     Route::get('verify-email', EmailVerificationPromptController::class)
         ->name('verification.notice');
 
-    // Vérifie l'email de l'utilisateur via un lien signé
+    // 31-Vérifie l'email de l'utilisateur via un lien signé
     Route::get('verify-email/{id}/{hash}', VerifyEmailController::class)
         ->middleware(['signed', 'throttle:6,1'])
         ->name('verification.verify');
