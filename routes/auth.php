@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 // 18Routes accessibles uniquement aux utilisateurs non authentifiés
 Route::middleware('guest')->group(function () {
-    // Affiche le formulaire d'inscription
+    // 21-Affiche le formulaire d'inscription
     Route::get('register', [RegisteredUserController::class, 'create'])
         ->name('register');
 
