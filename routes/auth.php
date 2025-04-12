@@ -23,7 +23,7 @@ Route::middleware('guest')->group(function () {
     Route::get('login', [AuthenticatedSessionController::class, 'create'])
         ->name('login');
 
-    // Traite la soumission du formulaire de connexion
+    // 24-Traite la soumission du formulaire de connexion
     Route::post('login', [AuthenticatedSessionController::class, 'store']);
 
     // Affiche le formulaire de demande de réinitialisation de mot de passe
