@@ -66,7 +66,7 @@ Route::middleware('auth')->group(function () {
     // 34-Traite la soumission du formulaire de confirmation du mot de passe
     Route::post('confirm-password', [ConfirmablePasswordController::class, 'store']);
 
-    // Déconnecte l'utilisateur
+    // 35-Déconnecte l'utilisateur
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
         ->name('logout');
 });
