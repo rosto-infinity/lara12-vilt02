@@ -45,7 +45,7 @@ Route::middleware('guest')->group(function () {
 
 // 29Routes accessibles uniquement aux utilisateurs authentifiés
 Route::middleware('auth')->group(function () {
-    // Affiche une notification demandant de vérifier l'email
+    // 30-Affiche une notification demandant de vérifier l'email
     Route::get('verify-email', EmailVerificationPromptController::class)
         ->name('verification.notice');
 
