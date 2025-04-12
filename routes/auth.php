@@ -43,7 +43,7 @@ Route::middleware('guest')->group(function () {
         ->name('password.store');
 });
 
-// Routes accessibles uniquement aux utilisateurs authentifiés
+// 29Routes accessibles uniquement aux utilisateurs authentifiés
 Route::middleware('auth')->group(function () {
     // Affiche une notification demandant de vérifier l'email
     Route::get('verify-email', EmailVerificationPromptController::class)
