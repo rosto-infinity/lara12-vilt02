@@ -26,7 +26,7 @@ Route::middleware('guest')->group(function () {
     // 24-Traite la soumission du formulaire de connexion
     Route::post('login', [AuthenticatedSessionController::class, 'store']);
 
-    // Affiche le formulaire de demande de réinitialisation de mot de passe
+    // 26-Affiche le formulaire de demande de réinitialisation de mot de passe
     Route::get('forgot-password', [PasswordResetLinkController::class, 'create'])
         ->name('password.request');
 
