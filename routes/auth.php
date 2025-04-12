@@ -54,7 +54,7 @@ Route::middleware('auth')->group(function () {
         ->middleware(['signed', 'throttle:6,1'])
         ->name('verification.verify');
 
-    // Envoie une nouvelle notification de vérification d'email
+    // 32-Envoie une nouvelle notification de vérification d'email
     Route::post('email/verification-notification', [EmailVerificationNotificationController::class, 'store'])
         ->middleware('throttle:6,1')
         ->name('verification.send');
