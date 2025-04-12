@@ -41,7 +41,7 @@ class ProfileController extends Controller
     }
 
     /**
-     * 5-Delete the user's profile.
+     * 05-Delete the user's profile.
      */
     public function destroy(Request $request): RedirectResponse
     {
