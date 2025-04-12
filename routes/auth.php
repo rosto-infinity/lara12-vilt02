@@ -19,7 +19,7 @@ Route::middleware('guest')->group(function () {
     // 22-Traite la soumission du formulaire d'inscription
     Route::post('register', [RegisteredUserController::class, 'store']);
 
-    // Affiche le formulaire de connexion
+    // 23-Affiche le formulaire de connexion
     Route::get('login', [AuthenticatedSessionController::class, 'create'])
         ->name('login');
 
