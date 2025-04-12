@@ -16,7 +16,7 @@ Route::middleware('guest')->group(function () {
     Route::get('register', [RegisteredUserController::class, 'create'])
         ->name('register');
 
-    // Traite la soumission du formulaire d'inscription
+    // 22-Traite la soumission du formulaire d'inscription
     Route::post('register', [RegisteredUserController::class, 'store']);
 
     // Affiche le formulaire de connexion
