@@ -30,7 +30,7 @@ Route::middleware('guest')->group(function () {
     Route::get('forgot-password', [PasswordResetLinkController::class, 'create'])
         ->name('password.request');
 
-    // Envoie un email pour réinitialiser le mot de passe
+    // 27-Envoie un email pour réinitialiser le mot de passe
     Route::post('forgot-password', [PasswordResetLinkController::class, 'store'])
         ->name('password.email');
 
